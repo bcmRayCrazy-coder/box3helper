@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box3帮助外星</title>
+    <link rel="stylesheet" href="./layui/src/css/layui.css">
+    <link rel="stylesheet" href="./mdui-master/dist/css/mdui.css">
+    <script src="./mdui-master/dist/js/mdui.js"></script>
+    <link rel="stylesheet" href="./css/index-index.css">
+</head>
+<body>
+    <script src="./layui/src/layui.js"></script>
+    <script src="./index.js"></script>
+    <ul class="layui-nav" lay-filter="">
+        <li class="layui-nav-item"><a href="./index.html"><i class="layui-icon" style="color: white;">&#xe68e;</i>主页</a></li>
+        <li class="layui-nav-item layui-this"><a href="./about.html"><i class="layui-icon" style="color: white;">&#xe7ae;</i>关于我们</a></li>
+        <li class="layui-nav-item"><a href="./useHelp.html"><i class="layui-icon" style="color: white;">&#xe702;</i>使用技巧</a></li>
+        <a href="" style="color: #999;"><img src="https://cdn.layui.com/upload/2019_5/168_1559291577683_9348.png" class="layui-nav-img">我</a>
+    </ul>
+
+      <div>
+          <h2>作者</h2>
+          <h5>ray_crazy</h5>
+          <h2>使用扩展:</h2>
+          <h5>layui blockly mdui(废除) three.js(开发中)</h5>
+          <button class="layui-btn layui-btn-radius layui-btn-normal mdui-ripple" onclick="tabShow('tabTit')">查看开发进度</button>
+      </div>
+      <div class="layui-card title" id="tabTit" style="display: none;">
+        <div class="layui-card-header">开发进度</div>
+        <div class="layui-card-body">
+          无数据
+          <button class="layui-btn layui-btn-normal mdui-ripple" onclick="goTo('./about.html')">关闭</button>
+        </div>
+      </div>
+      <div style="text-align: right;text-align: end;">
+          <span>喜欢就给个好评吧</span>
+          <div id="rateDiv"></div>
+          <br>
+          <button class="layui-btn mdui-ripple" onclick="msg('提交成功!')">提交</button>
+      </div>
+
+      <script src="./about.js"></script>
+</body>
+</html>

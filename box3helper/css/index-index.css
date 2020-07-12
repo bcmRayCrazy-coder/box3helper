@@ -1,0 +1,24 @@
+body{
+    background-color: #dddddd;
+}
+
+.title{
+    margin: 15% 40%;
+    width: 100%;
+}
+.flex{
+    /*flex 布局*/
+    display: flex;
+    /*实现垂直居中*/
+    align-items: center;
+    /*实现水平居中*/
+    justify-content: center;
+    
+    text-align: justify;
+    width:auto;
+    height:auto;
+    margin:0 auto;
+}
+.rui-right{
+    padding-right: 50%;
+}

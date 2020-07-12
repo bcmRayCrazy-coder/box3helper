@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box3帮助外星</title>
+    <link rel="stylesheet" href="./layui/src/css/layui.css">
+    <link rel="stylesheet" href="./mdui-master/dist/css/mdui.css">
+    <link rel="stylesheet" href="./css/index-index.css">
+</head>
+<body>
+    <script src="./layui/src/layui.js"></script>
+    <script src="./mdui-master/dist/js/mdui.js"></script>
+    <ul class="layui-nav" lay-filter="">
+      <li class="layui-nav-item layui-this"><a href="./index.html"><i class="layui-icon" style="color: white;">&#xe68e;</i>主页</a></li>
+      <li class="layui-nav-item"><a href="./about.html"><i class="layui-icon" style="color: white;">&#xe7ae;</i>关于我们</a></li>
+      <li class="layui-nav-item"><a href="./useHelp.html"><i class="layui-icon" style="color: white;">&#xe702;</i>使用技巧</a></li>
+      <a href="" style="color: #999;"><img src="https://cdn.layui.com/upload/2019_5/168_1559291577683_9348.png" class="layui-nav-img">我</a>
+  </ul>
+
+      <div class="layui-carousel layui-anim layui-anim-up" id="test1">
+        <div carousel-item>
+          <div style="background-color: rgb(45, 255, 45);text-align: center;" class="mdui-ripple"><a href=""><h1 style="font-size: 60px;">主页</h1><h5>HUB</h5></a></div>
+          <div style="background-color: rgb(21, 93, 248);text-align: center;" class="mdui-ripple"><a href="./about.html"><h2 style="font-size: 60px;">关于我们</h2><h6>ABOUT</h6></a></div>
+          <div style="background-color: rgb(247, 22, 108);text-align: center;" class="mdui-ripple"><a href="./useHelp.html"><h2 style="font-size: 60px;">使用技巧</h2><h6>HELP</h6></a></div>
+        </div>
+      </div>
+      <h1 class="flex layui-anim layui-anim-fadein">该项目正在开发中</h1>
+      <div>
+          <button class="mdui-ripple mdui-btn-raised mdui-btn" style="display: none;">mdui-ripple</button>
+          <div class="mdui-card">
+            <div class="mdui-card-header">
+              <div class="mdui-card-header-title">
+                <div class="mdui-chip">
+                  <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">tag_faces</i></span>
+                  <span class="mdui-chip-title">ray_crazy</span>
+                </div>
+              </div>
+              <div class="mdui-card-header-subtitle">总开发者</div>
+            </div>
+          </div>
+      </div>
+      <ul class="mdui-list" mdui-collapse="{accordion: true}">
+        <li class="mdui-list-item mdui-ripple">
+          <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+          <div class="mdui-list-item-content" onclick="goTo('./index.html')">主页</div>
+        </li>
+        <li class="mdui-list-item mdui-ripple">
+          <i class="mdui-list-item-icon layui-icon">&#xe7ae;</i>
+          <div class="mdui-list-item-content" onclick="goTo('./about.html')">关于我们</div>
+        </li>
+      </ul>
+
+      <script src="./index.js"></script>
+</body>
+</html>
