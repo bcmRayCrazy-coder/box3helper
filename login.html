@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function GetRequest() {
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    theRequest[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+        var req = new Object();//便于后面的操作
+        var user = String();
+        var password = String();
+        var url = String();
+        var re = false
+        user = req['user'];
+        password = req['password'];
+        url = req['url']
+        if(user=='testAccount'&&password=='abc012'){
+            re = true;
+        }
+        window.location.href = url + '?back=' + re;
+    </script>
+</body>
+</html>
